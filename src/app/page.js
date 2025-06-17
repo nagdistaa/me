@@ -3,8 +3,7 @@ import React from "react";
 
 async function Home() {
   const currentCountry = "countrycode=EG";
-  console.log(process.env.NEXT_PUBLIC_STATIONS_URL + currentCountry);
-  const stations = await fetch(process.env.STATIONS_URL + currentCountry).then(
+  const stations = await fetch(process.env.NEXT_PUBLIC_STATIONS_URL + currentCountry).then(
     (res) => res.json()
   );
   return (
